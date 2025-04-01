@@ -1,0 +1,34 @@
+27/03/25
+CONTEÚDO NOVO!!!
+GIT!!
+|*|__|*|
+-perder arquivos;
+-sobrecarregar;
+-desorgarnizado;
+-compartilhar;
+
+VERSIONAMENTO  |@|__|@|
+-criar versões dos códigos;
+-São páginas que ficam salvas que vão sendo atualizadas;
+
+REPOSITÓRIO |&|..|&|
+-pasta
+-diretório
+
+COMANDOS!!! GitHub |$|¨¨|$|
+-clear= limpar
+-git add . = alterar
+-git commit -m = mensagem com explicação da alteração
+-git remote add origin
+-git push =inpurrar
+-git push -u origin master
+
+-push= mando online
+-pull=mando físico
+
+
+
+
+
+
+

@@ -1,0 +1,323 @@
+Aula 2: 
+Fundamentos de programação orientada objeto!
+if <condicao> :
+
+(:)- informa que existe um bloco de linha a seguir
+
+-Exemplo:
+Condições
+
+# -*- coding: UTF-8 -*-
+
+a = int(input("Primeiro valor: "))
+
+b = int(input("Segundo valor: "))
+
+if a > b:
+
+print ("O primeiro número é o maior!")
+
+if b > a:
+
+print ("O segundo número é o maior!")
+
+-ClCláusula else
+vai contradizer os if`s antes dele.
+-Cláusula elif
+Substitui um par else if, mas sem criar outro nível de
+estrutura.
+Evita problemas de deslocamentos desnecessários à
+direita. 
+
+#-*- coding: UTF-8 -*-
+
+import math
+
+== ( significa que esta relmente que é igual)
+
+Tem condição:      não tem condição:
+if                      else:
+elif
+
+===============================================================================================
+CONTEUDO NOVO
+AULA 3:
+Lógica de programação e algoritmo!!!
+-Estruturas de Repetição
+while (sempre)
+for ( repita)
+
+-COM VARIÁVEL         
+x = 1
+print(x)
+x = 2
+print(x)
+x = 3
+print(x)
+
+-Estrutura de repetição
+while <condição>:
+      bloco de código
+-condição a ser avaliada.
+se tiver dentro é repitindo
+
+-EXEMPLO:
+while cont<= fim:
+     print(x)
+     cont = cont + 1
+
+break (se eu quiser para-lo),dentro de um if.
+==================================================================================================
+11/03/25
+AULA 4:
+Lógica de programação e algoritmo!
+
+-Já usamos várias funções de Python, como por
+exemplo: int, float, print e input.
+
+Exemplo:
+Daniel:100,000
+Resultado= Daniel + Daniel + 10/100 
+ 
+-Um nome para fazer sintido!!!
+
+Exemplo:
+Soma dois números.
+
+# -*- coding: UTF-8 -*-
+
+def soma(a, b):
+
+    print(a + b)
+
+soma(2, 9)
+
+soma(7, 8)
+
+soma(10, 15)
+
+Onde:
+
+-a e b: parâmetros da função.
+
+Explicação:
+-def,(indica uma funcao para devolver algum valor)
+-return,(indica retornar)
+(return tipo break)
+
+=====================================================================================================
+13/03/25
+Dia da prova: 20/03/25
+Exemplos para prova:
+# -*- coding: UTF-8 -*-
+
+print("Olá usuário! Neste programa eu irei lhe dar o resultado de uma opreção matemática do seu desejo :)")
+
+n1= int(input("Digite o primeiro valor: "))
+n2= int(input("Digite o segundo valor: "))
+op= input("""Coloque a opereção desejada podendo ser: '+' para soma, '/' para divisão
+'*' para multiplicação e '-' para subtração: """)
+
+def opereções (op):
+    global n1, n2
+    if op == "+":
+        soma= n1+n2
+        print ("O resultado da sua soma é de: ", soma)
+    elif op == "-":
+        subtração= n1 - n2
+        print ("O resultado da sua subtração é de: ", subtração)
+    elif op == "*":
+        multiplicação= n1 * n2
+        print ("O resultadp da multiplicação é de: ", multiplicação)
+    elif op == "/":
+        divisão= n1/n2
+        print ("O resultado da divisão é de: ", divisão)
+
+opereções (op)
+
+=======================================================================================================
+18/03/25
+AULA 5:
+-Quando for numeros inteiro é usado int
+-Quando não for expecificado é usado float
+-Exemplo 1:
+
+ for dani_zika in rangg (0,10):| Mais facíl
+marlon_greg= 0                 |
+While marlon_greg <10:         |
+_______________________________|
+-Exemplo cópia de lista 2:
+
+# -*- coding: UTF-8 -*-
+L = [1, 2, 3, 4, 5]|
+V = L[:]           |L[:]--> valor total do índice do L
+V[0] = 6           |
+print (L)          |
+print (V)          |
+___________________|
+-Exemplo 3:
+
+# -*- coding: UTF-8 -*-
+L = [1, 2, 3, 4, 5]
+print (L[0:5]) # [1, 2, 3, 4, 5] da posição 0 até a posição 5, sem incluí-la
+print (L[:5]) # [1, 2, 3, 4, 5] do início até a posição 5, sem incluí-la
+print (L[:-1]) # [1, 2, 3, 4] do início até o último, sem incluí-lo
+print (L[1:3]) # [2, 3] da posição 1 até a posição 3, sem incluí-la
+print (L[1:4]) # [2, 3, 4] da posição 1 até a posição 4, sem incluí-la
+print (L[3:]) # [4, 5] da posição 3 até o final
+print (L[:3]) # [1, 2, 3] do início até a posição 3, sem incluí-la
+print (L[-1]) # 5 último elemento
+print (L[-2]) # 4 penúltimo elemento
+
+Complimentos dos Basicos:
+-O conceito das lista é armaazenar mais um valor, podendo ter varios tipos de python.
+-variaveis: tres tipos mais comuns:
+__________________________________
+| inteiros (int);                |
+| reais (float) com quadrados;   |
+| string (str);                  |
+_________________________________|
+
+if num > 5:      (TRUE)         |
+     print (num)                |
+else:            (FALSE)        |                            
+     print (5)                  |
+________________________________|
+___________________________________________________________________________________________________________________________________
+| input--> tem que ter variavel, o tipo de variavel                                                                                |
+|ex:print("Oi eu sou o jonas") ---> mostrar texto                                                                                  |
+|ex:print(jonas) ---> mostrar variavel                                                                                             |
+|ex:print("Oi o valor é: ", jonas) ---> texto e variaveis separados por virgula                                                    |
+|ex: De print com f string: (f" Oi o valor é:{jonas}")                                                                             |
+---> |_ Não precisa separar as variaveis!!!                                                                                        |
+|ex: f string para deixar duas casas, depois da virgula: print (f" Oi o valor é: { jonas:.2f})                                     |
+|ex: Para deixar dois numeros após a virgula: print ("oi o valor é: %.2f % valor)                                                  |
+|ex: Paa deixar dois numeros apos a virgula com varias variaveis: print ("Oi o valor é: %.2f e bla bla bla é: %"%(valor, outro))   |
+|ex: f string para deixar duas casas depois da virgula com varias variaveis: (f" Oi o valor é: {valor:.2f} e outro é: {outro:.3f}")|
+____________________________________________________________________________________________________________________________________
+if e else
+ex:
+num1= 10
+num2= 5
+
+if num1 > num2:
+     print("O num1 é maior")
+elif num2 > num1:
+     print("O num2 é maior")
+else:
+     print("Os valores são iguais")
+__________________________________________________________________________________________________________________________________
+-for: usar quando se sabe a quantidade de vezes que ira repetir;
+-while: usar quando não tem a quantidade;
+ ex: for com fim: for i ( variavel) in range (s)-- ira repetir do 0 ate o 5, mas nao chega no 5, pois para sempre antes.
+ ex: for fim e inicio: foi i in range
+
+___________________________________________________________________________________________________________________________________
+-or: verificar as duas afirmações e uma delas tem que ser verdadeira;
+v1  v2  R
+v   v   v
+f   v   v
+v   f   v
+f   f   f
+
+-and: as duas afirmações tem que ser verdadeiea;
+     v1  v2  R
+and- v   v   v
+     v   f   f
+and- f   v   f
+or-  f   f   f
+================================================================================================================
+25/03/25
+AULA 5
+-append(): é usada para adiconar um elemento ao fim da lista.
+-len(): repetição com tamanho da lista usando essa função.
+-extend(): prolonga a lista, adiconando todos o elementos de uma lista.
+-del: é usada para remover elementos da lista.
+-ultilização do for é uma estrutura de repetiçaõ projetada, especialmente, para percorrer listas,
+agora o for será um pouco diferente como exemplo:
+
+# -*- coding: UTF-8 -*-
+
+L = [8, 9, 15]
+
+for e in L:
+
+print (e)
+
+-Ordenação da lista ( não quer dizer que vai mudar a oposição para sempre, saindo do comando ela volta ao normal.)
+-sort() pode ser utilizado para ordenar as listas de valores numéricos ou de strings.
+                                            _______________________________
+Dicionários!                                |  exemplos:                   |
+ Lista = [] --> só valores                  |  tabela = {"Alface": 0.45,   |
+Dicionário = {} --> chaves e valores        |           "Batata": 1.20,    |
+                                            |           "Tomate": 2.30,    |
+                                            |           "Feijão": 1.50}    |
+                                            |              |        |      |
+                                            |            Chave     Valor   |
+                                            |______________________________|
+______________________________________
+|exemplo 2:                          |
+|Obtenção de uma lista de chaves e   |
+|valores.                            |
+|                                    |
+|# -*- coding: UTF-8 -*-             |
+|                                    |
+|tabela = {"Alface": 0.45,           |                                 |
+|"Batata": 1.20,                     |
+|"Tomate": 2.30,                     |
+|"Feijão": 1.50}                     |
+|print(tabela.keys())                |
+|print(tabela.values())              |
+|____________________________________|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
